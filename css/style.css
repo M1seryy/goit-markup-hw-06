@@ -399,19 +399,13 @@ h6 {
   box-sizing: border-box;
   display: block;
   position: relative;
-
   padding: 0 0 0 38px;
 }
 
 .input-icon {
   fill: currentColor;
-  position: absolute;
-  top: 14px;
-  left: 19px;
+
   z-index: 1;
-  display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .modal-label {
@@ -427,16 +421,25 @@ h6 {
 }
 
 .name-input-icon {
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 11px;
+  left: 16px;
 }
 .phone-input-icon {
-  width: 13px;
-  height: 12px;
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 .email-input-icon {
-  width: 15px;
-  height: 12px;
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
 .name-label-text {
