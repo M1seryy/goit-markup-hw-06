@@ -490,6 +490,25 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form-email">
+            <p class="footer-sub">Subscribe</p>
+            <form class="footer-form" action="#">
+              <input
+                class="footer-email"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="footer-submit" type="submit">
+                Subscribe
+                <svg class="footer-form-icon">
+                  <use
+                    href="./images/svg/form-icons-opt.svg#icon-Frame-3"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -501,54 +520,70 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <label class="modal-label name-label"
-          ><p class="label-text name-label-text">Name</p>
-          <div class="input-wrap">
-            <svg class="input-icon name-input-icon">
-              <use
-                href="./images/svg/form-icons-opt.svg#icon-person-black-18dp-1"
-              ></use>
-            </svg>
-            <input class="name-input" type="text" />
-          </div>
-        </label>
+        <form action="#">
+          <label class="modal-label name-label"
+            ><p class="label-text name-label-text">Name</p>
+            <div class="input-wrap">
+              <svg class="input-icon name-input-icon">
+                <use
+                  href="./images/svg/form-icons-opt.svg#icon-person-black-18dp-1"
+                ></use>
+              </svg>
+              <input
+                class="modal-input"
+                type="text"
+                name="modal-name"
+                required
+                minlength="3"
+              />
+            </div>
+          </label>
 
-        <label class="modal-label other-label"
-          ><p class="label-text other-label-text">Phone</p>
-          <div class="input-wrap">
-            <svg class="input-icon phone-input-icon">
-              <use
-                href="./images/svg/form-icons-opt.svg#icon-phone-black-18dp-1"
-              ></use>
-            </svg>
-            <input class="name-input" type="text" />
-          </div>
-        </label>
+          <label class="modal-label other-label"
+            ><p class="label-text other-label-text">Phone</p>
+            <div class="input-wrap">
+              <svg class="input-icon phone-input-icon">
+                <use
+                  href="./images/svg/form-icons-opt.svg#icon-phone-black-18dp-1"
+                ></use>
+              </svg>
+              <input
+                class="modal-input"
+                type="tel"
+                name="modal-phone"
+                required
+              />
+            </div>
+          </label>
 
-        <label class="modal-label other-label"
-          ><p class="label-text other-label-text">Phone</p>
-          <div class="input-wrap">
-            <svg class="input-icon email-input-icon">
-              <use
-                href="./images/svg/form-icons-opt.svg#icon-email-black-18dp-1"
-              ></use>
-            </svg>
-            <input class="name-input" type="text" />
-          </div>
-        </label>
+          <label class="modal-label other-label"
+            ><p class="label-text other-label-text">Email</p>
+            <div class="input-wrap">
+              <svg class="input-icon email-input-icon">
+                <use
+                  href="./images/svg/form-icons-opt.svg#icon-email-black-18dp-1"
+                ></use>
+              </svg>
+              <input class="modal-input" name="modal-email" type="email" />
+            </div>
+          </label>
 
-        <label class="modal-label other-label"
-          ><p class="label-text other-label-text">Comment</p>
-          <textarea placeholder="Text input" class="modal-text-area"></textarea>
-        </label>
-        <div class="acception">
-          <input class="accepyion-check" type="checkbox" />
-          <p class="acceptiob-text">
-            I accept the terms and conditions of the
-            <a class="accepyion-link" href="#">Privacy Policy</a>
-          </p>
-        </div>
-        <button type="submit" class="submit-btn">Send</button>
+          <label class="modal-label other-label"
+            ><p class="label-text other-label-text">Comment</p>
+            <textarea
+              placeholder="Text input"
+              class="modal-text-area"
+            ></textarea>
+          </label>
+          <div class="acception">
+            <input class="accepyion-check" type="checkbox" required />
+            <p class="acceptiob-text">
+              I accept the terms and conditions of the
+              <a class="accepyion-link" href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
